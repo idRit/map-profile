@@ -4,7 +4,7 @@ let lng = new URL(window.location.href).searchParams.get("lng");
 var mymap = L.map('mapid').setView([lat, lng], 19);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    maxZoom: 19,
+    maxZoom: 15,
 }).addTo(mymap);
 
 let navIcon = L.icon({
