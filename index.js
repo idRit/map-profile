@@ -1,10 +1,10 @@
 let lat = new URL(window.location.href).searchParams.get("lat");
 let lng = new URL(window.location.href).searchParams.get("lng");
 
-var mymap = L.map('mapid').setView([lat, lng], 19);
+var mymap = L.map('mapid').setView([lat, lng], 12);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    maxZoom: 15,
+    maxZoom: 19,
 }).addTo(mymap);
 
 let navIcon = L.icon({
