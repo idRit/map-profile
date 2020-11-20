@@ -7,7 +7,7 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}.
 }).addTo(mymap);
 
 let navIcon = L.icon({
-    iconUrl: 'baseline_navigation_black_18dp.png'
+    iconUrl: 'baseline_location_on_white_18dp.png'
 });
 
 L.marker([lat, lng], {icon: navIcon}).addTo(mymap);
